@@ -1,0 +1,58 @@
+<!--
+  Generated template for the TocarTemaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tocar Tema</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <table style="text-align:center; width:100%; height:100%">
+    <tr style="width:100%; height:18%">
+      <td>
+        <a (click)="play(1)"><img [src]="imagenes[0].url" id="enviarIcon" width="100%" height="100%"></a>
+      </td>
+    </tr>
+    <tr style="width:100%; height:18%">
+      <td>
+        <a (click)="play(2)"><img [src]="imagenes[1].url" id="enviarIcon" width="100%" height="100%"></a>
+      </td>
+    </tr>
+    <tr style="width:100%; height:18%">
+      <td>
+        <a (click)="play(3)"><img [src]="imagenes[2].url" id="enviarIcon" width="70%" height="90%"></a>
+      </td>
+    </tr>
+    <tr style="width:100%; height:18%">
+      <td>
+        <a (click)="play(4)"><img [src]="imagenes[3].url" id="enviarIcon" width="100%" height="100%"></a>
+      </td>
+    </tr>
+    <tr style="width:100%; height:18%">
+      <td>
+        <a (click)="play(5)"><img [src]="imagenes[4].url" id="enviarIcon" width="100%" height="100%"></a>
+      </td>
+    </tr>
+    <tr style="width:100%; height:10%">
+      <td>
+          <button ion-button block
+          (click)="TocarMelodia()">Tocar Melodia</button>
+      </td>
+    </tr>
+    <tr style="width:100%; height:10%">
+      <td>
+          <button ion-button block color="danger" 
+          (click)="IniciarMelodia()">Iniciar Melodía</button>
+      </td>
+    </tr>
+  </table>
+
+
+</ion-content>
